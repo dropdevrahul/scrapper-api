@@ -6,13 +6,14 @@ A default user is also provided for token based authorization using django-rest-
 
 
 Default url for login is which uses a default POST request which you are free to override:
-   /api/login/
+
+    /api/login/
 
 which returns the username and token for the user.
 
 Once we have the token we can add the following header to requests to auth:
 
-   Authorization: "token newly_generated_token"
+    Authorization: "token newly_generated_token"
 
 Replace the newly_generated_token with your token
 

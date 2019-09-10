@@ -1,0 +1,15 @@
+version: '2.2'
+services:
+    faircent-api:
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+        restart: always
+
+        ports:
+            - "80:80"
+        networks:
+            - faircent
+
+networks:
+    faircent:

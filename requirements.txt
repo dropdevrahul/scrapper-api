@@ -1,0 +1,6 @@
+Django
+djangorestframework==3.9.1
+django-rest-auth==0.9.3
+django-cors-headers
+PyMySQL==0.9.3
+

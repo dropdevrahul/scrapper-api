@@ -9,7 +9,7 @@ services:
         ports:
             - "80:80"
         networks:
-            - faircent
+            - local
 
 networks:
-    faircent:
+    local:

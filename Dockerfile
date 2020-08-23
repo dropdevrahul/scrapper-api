@@ -1,5 +1,5 @@
 FROM alpine
-FROM python:3.7
+FROM python:3.8
 
 RUN mkdir /srv/api -p
 

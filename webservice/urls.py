@@ -21,5 +21,6 @@ from .views import login
 urlpatterns = [
     url(r'api/login', login),
     url(r'admin/', admin.site.urls),
-    # url(r'api/', include('portfolio_insights.urls')),
+    url(r'api/', include('user_movies.urls')),
+    url(r'api/', include('movie_scrapper.urls')),
 ]

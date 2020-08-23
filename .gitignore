@@ -1,2 +1,5 @@
 *.pyc
 *.swp
+.env
+.bak
+db.sqlite3

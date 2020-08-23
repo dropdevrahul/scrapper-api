@@ -1,6 +1,11 @@
 Django
-djangorestframework==3.9.1
-django-rest-auth==0.9.3
+djangorestframework
+django-rest-auth
 django-cors-headers
-PyMySQL==0.9.3
+python-dotenv
+PyMySQL
+pytest
+pytest-django
+requests
+beautifulsoup4
 

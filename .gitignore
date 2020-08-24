@@ -3,3 +3,4 @@
 .env
 .bak
 db.sqlite3
+venv

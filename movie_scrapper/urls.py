@@ -1,7 +1,7 @@
-from django.conf.urls import url
+from django.urls import path
 from .views import ScrapperView, MoviesView
 
 urlpatterns = [
-    url(r'scrape', ScrapperView.as_view()),
-    url(r'movies', MoviesView.as_view()),
+    path('scrape', ScrapperView.as_view()),
+    path('movies', MoviesView.as_view()),
 ]

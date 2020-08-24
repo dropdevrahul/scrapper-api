@@ -6,6 +6,15 @@ import requests
 MovieDetail = collections.namedtuple('MovieDetail', 'title storyline url')
 
 def get_movie_details(relative_movie_url):
+    """
+        Function to scrap movie details based on its relative url.
+        Attributes:
+        relative_movie_url url:
+                        relative url of the form /title/{{movie_code}}/
+        Returns:
+        --------
+        MovieDetail
+    """
     movie_url = 'https://imdb.com' + relative_movie_url
     response = requests.get(movie_url)
     if response.status_code == 200:
@@ -16,9 +25,12 @@ def get_movie_details(relative_movie_url):
         return MovieDetail(title=movie_title, storyline=movie_storyline, url=movie_url)
 
 def get_movies_list(movie_list_url):
+    """
+        Scrap list of relative urls for movies for the given movie_list_url
+    """
     response = requests.get(movie_list_url)
     if response.status_code == 200:
         soup = BeautifulSoup(response.content, 'html.parser')
         trs = soup.select('.lister .lister-list tr')
         movies_links = [item.find('a')['href'] for item in trs]
-        return movies_links
+        return movies_links[:100]

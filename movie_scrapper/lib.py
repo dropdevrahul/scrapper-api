@@ -6,6 +6,15 @@ logger = logging.getLogger(__name__)
 
 
 def scrap_and_store_movies_details(movies_list_url, user):
+    """
+        scrapes and stores movie details for the given movies_list_url max 100 movies are scrapped at a time
+        Attributes:
+        ----------
+        movies_list_url url:
+                movie list url from IMDB domain
+        user user_app.ApiUser:
+                Logged in Django User
+    """
     movie_links = get_movies_list(movies_list_url)
     count = 0
     for link in movie_links:

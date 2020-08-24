@@ -22,6 +22,8 @@ Replace the newly_generated_token with your token
 
 Run this command
 
+Copy the .env.example file as .env and fill the secret token there.
+
 ```
 ./setup.bash
 ```

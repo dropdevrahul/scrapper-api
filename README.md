@@ -20,10 +20,15 @@ Replace the newly_generated_token with your token
 
 ### Running the project
 
-Run this command
 
 Copy the .env.example file as .env and fill the secret token there.
+
+Run this command
 
 ```
 ./setup.bash
 ```
+
+Running this command will run a server at localhost:8000/127.0.0.1:8000.
+
+The setup.bash command requires pip3 command be available if your system has a different name for python 3 pip please change it in the script.

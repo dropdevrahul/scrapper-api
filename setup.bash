@@ -17,6 +17,3 @@ python manage.py migrate
 
 echo "Creating default User"
 python manage.py createsuperuser
-
-
-python manage.py runserver

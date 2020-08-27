@@ -28,6 +28,11 @@ Run this command
 ```
 ./setup.bash
 ```
+If successfull, you can run a django local server by using this command:
+
+```
+python manage.py runserver
+```
 
 Running this command will run a server at localhost:8000/127.0.0.1:8000.
 

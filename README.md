@@ -1,4 +1,4 @@
-# Basic scrappping with django, requests library and beautifulsoup
+# Basic scrappping with django, requests library and beautifulsoup from imbd site
 
 ## Intro
 A default user is also provided for token based authorization using django-rest-framework present in the
